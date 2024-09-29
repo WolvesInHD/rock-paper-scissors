@@ -7,7 +7,6 @@ Compare the selection of the user and the computer
 Assign win/loss counter
 */
 
-let userChoice;
 let computerOutput;
 
 function randomSelection (min, max) {
@@ -22,16 +21,11 @@ if (randomSelection(1, 3) == 1) {
     computerOutput = "Scissors"
 };
 
-
 console.log(computerOutput)
 
-/*
-if (computerChoice = 1) {
-    let computerOutput = "Rock";
-} else if (computerChoice = 2) {
-    let computerOutput = "Scissors"
-} else {
-    let computerOutput = "Paper"
-}
-return computerOutput;
-} */
+
+let userPrompt = prompt ("Select your choice! Rock, Paper, or Scissors?");
+
+let userChoice = userPrompt.toLowerCase();
+
+console.log(userChoice);
